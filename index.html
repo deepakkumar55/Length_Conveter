@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="calculator">
+    <h1>Length Calculator</h1>
+    <form>
+      <label>Enter Length:</label>
+      <input type="text" id="lengthInput">
+      <br><br>
+      <label>From Unit:</label>
+      <select id="fromUnit">
+        <option value="inches">Inches</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="feet">Feet</option>
+        <option value="meters">Meters</option>
+      </select>
+      <br><br>
+      <label>To Unit:</label>
+      <select id="toUnit">
+        <option value="inches">Inches</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="feet">Feet</option>
+        <option value="meters">Meters</option>
+      </select>
+      <br><br>
+      <input type="button" value="Calculate" onclick="calculateLength()">
+      <br><br>
+      <label>Result:</label>
+      <input type="text" id="result" disabled>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
